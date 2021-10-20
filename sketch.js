@@ -51,7 +51,7 @@ function setup() {
   fruit = Bodies.circle(100,400,15,fruit_options);
   World.add(world,fruit);
   
-  bubble = createSprite(290,460,20,20);
+  bubble = createSprite(290,500,20,20);
   bubble.addImage(bubble_img);
   bubble.scale = 0.1;
   
@@ -68,8 +68,8 @@ function setup() {
   bunny.addAnimation('crying',sad);
   bunny.changeAnimation('blinking');
 
-  rope = new Rope(4,{x:230,y:330});
-  rope2 = new Rope(4,{x:50,y:450});
+  rope = new Rope(6,{x:230,y:330});
+  rope2 = new Rope(5,{x:50,y:450});
   con = new Link(rope,fruit);
   con2 = new Link(rope2,fruit);
 
